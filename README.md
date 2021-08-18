@@ -1,2 +1,0 @@
-# AdvancedJavaScript_Kostareva_Anastasiya
-Homework to Advanced Javascript Course
