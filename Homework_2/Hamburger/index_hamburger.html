@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link href="styles_hamburger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <a href="index_hamburger.html">
+                <div class="logo"><img src="img/burger-1396639_640.png"></div>
+            </a>
+            <div class="navbar_forms_area">
+                <div class="catalog_btn_area">
+                    <button class="catalog_btn">Каталог</button>
+                </div>
+                <div class="login_btn_area"><button class="login_btn">Войти</button></div>
+                <form><input class="field_input"></form>
+            </div>
+
+        </nav>
+        <div class="cart_area">
+            <button class="cart-button" type="button">Корзина</button>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <h3>Выберите размер порции</h3>
+            <div class="size_area">
+                <img class="size_area_img" src="img/hamburger.svg" alt="img">
+                <div class="buttons_box">
+                    <div class="radio_area"> <input type="radio" id="large_radio" name="size" value="large"
+                            onclick="returnValues(this)">
+                        <label for="large_radio" class="size_btn">Большой 100 рублей, 40ккал</label>
+                    </div>
+                    <div class="radio_area"><input type="radio" id="small_radio" name="size" value="small"
+                            onclick="returnValues(this)">
+                        <label for="small_radio" class="size_btn">Маленький 50 рублей, 20ккал</label>
+                    </div>
+                    <!-- <button class="size_btn" id="large_btn">Большой 100 рублей, 40ккал</button> -->
+                    <!-- <button class="size_btn" id="small_btn">Маленький 50 рублей, 20ккал</button> -->
+                </div>
+            </div>
+            <h3>Выберите дополнительный компонент</h3>
+            <div class="additional_options">
+                <div class="cheese">
+                    <img class="additional_options_img" src="img/cheese.svg" alt="img">
+                    <div class="radio_area"> <input type="radio" id="cheese_radio" name="addition" value="cheese"
+                            onclick="returnValues(this)">
+                        <label for="cheese_radio" class="additions_btn">Сыр 10 рублей, 20ккал</label>
+                    </div>
+                    <!-- <button class="additions_btn" id="cheese_btn">Сыр 10 рублей, 20ккал</button> -->
+                </div>
+                <div class="lattuce">
+                    <img class="additional_options_img" src="img/leaf.svg" alt="img">
+                    <div class="radio_area"> <input type="radio" id="lettuce_radio" name="addition" value="lettuce"
+                            onclick="returnValues(this)">
+                        <label for="lettuce_radio" class="additions_btn">Салат 20 рублей, 5ккал</label>
+                    </div>
+                    <!-- <button class="additions_btn" id="lattuce_btn">Салат 20 рублей, 5ккал</button> -->
+                </div>
+                <div class="frenchFries">
+                    <img class="additional_options_img" src="img/french-fries.svg" alt="img">
+                    <div class="radio_area"> <input type="radio" id="frenchFries_radio" name="addition"
+                            value="frenchFries" onclick="returnValues(this)">
+                        <label for="frenchFries_radio" class="additions_btn">Картофель 15 рублей, 10ккал</label>
+                    </div>
+                    <!-- <button class="additions_btn" id="frenchFries_btn">Картофель 15 рублей, 10ккал</button> -->
+                </div>
+            </div>
+            <h3>Выберите приправу</h3>
+            <div class="seasonings">
+                <div class="spice">
+                    <img class="seasonings_img" src="img/ spice.jpg" alt="img">
+                    <div class="radio_area"> <input type="checkbox" id="spice_radio" name="seasoning" value="spice"
+                            onclick="returnValues(this)">
+                        <label for="spice_radio" class="additions_btn">Приправа 15 рублей, 0ккал</label>
+                    </div>
+                    <!-- <button class="seasoning_btn" id="spice_btn">Приправа 15 рублей, 0ккал</button> -->
+                </div>
+                <div class="mayonnaise">
+                    <img class="seasonings_img" src="img/mayo.jpg" alt="img">
+                    <div class="radio_area"> <input type="checkbox" id="mayo_radio" name="seasoning" value="mayo"
+                            onclick="returnValues(this)">
+                        <label for="mayo_radio" class="additions_btn">Майонез 20 рублей, 5ккал</label>
+                    </div>
+                    <!-- <button class="seasoning_btn" id="mayo_btn">Майонез 20 рублей, 5ккал</button> -->
+                </div>
+            </div>
+            <div class="button_area">
+                <button class="order_btn">Оформить заказ</button>
+
+            </div>
+        </div>
+    </main>
+    <script src="script_hamburger.js"></script>
+</body>
+
+</html>

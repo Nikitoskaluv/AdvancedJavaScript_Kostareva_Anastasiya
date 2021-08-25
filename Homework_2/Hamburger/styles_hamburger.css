@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  max-width: 70px;
+  margin-left: 15px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  background-color: #cc6c12a6;
+}
+
+.navbar_forms_area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog_btn {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.catalog_btn {
+  width: 70px;
+  height: 35px;
+  background-color: #ff9216bf;
+  font-family: 'Poppins', sans-serif;
+  border-color: black;
+}
+
+.login_btn_area {
+  margin-right: 35px;
+}
+
+.login_btn,
+.cart-button,
+.goods_card_button,
+.size_btn,
+.additions_btn,
+.seasoning_btn,
+.clear_btn,
+.order_btn {
+  padding: 0 10px;
+  height: 35px;
+  background-color: #ff9216bf;
+  font-family: 'Poppins', sans-serif;
+  border-color: black;
+}
+
+.field_input {
+  width: 700px;
+  height: 35px;
+  outline: none;
+  font-size: 25px;
+}
+
+.cart_area {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  height: 75px;
+  align-items: center;
+  background-color: #f0a70b;
+}
+
+.cart-button {
+  margin-right: 35px;
+}
+
+button {
+  border-radius: 35px;
+  border-width: 1px;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.goods_card {
+  border: 1px solid black;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.goods_card_button {
+  align-self: flex-end;
+  margin: 15px 0;
+}
+
+.sum_area {
+  margin: 15px;
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+
+.size_area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.size_area_img {
+  width: 50%;
+}
+
+.wrap {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.buttons_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.size_btn,
+.additions_btn {
+  margin-top: 80px;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.additional_options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.cheese,
+.lattuce,
+.frenchFries {
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frenchFries .additional_options_img {
+  width: 60%;
+}
+
+.additional_options_img {
+  width: 100%;
+}
+
+.seasonings {
+  display: flex;
+  margin-top: 100px;
+}
+
+.seasonings_img {
+  width: 50%;
+}
+
+.spice,
+.mayonnaise {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.result {
+  border: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.clear_btn {
+  margin: 15px auto;
+  display: block;
+}
+
+.button_area {
+  width: 100%;
+  display: flex;
+}
+
+.order_btn {
+  margin: 50px auto;
+  background-color: #d83131c2;
+  border-radius: 0%;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  height: 65px;
+}
