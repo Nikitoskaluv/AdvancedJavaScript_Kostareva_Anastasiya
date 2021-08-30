@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  max-width: 70px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  background-color: #c9abe4;
+}
+
+.navbar_forms_area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.catalog_btn {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.login_btn_area {
+  margin-right: 35px;
+}
+
+.login_btn,
+.cart-button,
+.goods_card_button,
+.catalog_btn {
+  width: 70px;
+  height: 35px;
+  background-color: #89428ebf;
+  font-family: 'Poppins', sans-serif;
+  border-color: black;
+  border-width: 1px;
+}
+
+.field_input {
+  width: 700px;
+  height: 35px;
+  outline: none;
+  font-size: 25px;
+}
+
+.cart_area {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  height: 75px;
+  align-items: center;
+  background-color: #8654b5;
+}
+
+.cart-button {
+  margin-right: 35px;
+}
+
+button {
+  border-radius: 50px;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.goods_card {
+  border: 1px solid black;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.goods_card_button {
+  align-self: flex-end;
+  margin: 15px 0;
+}
+
+.sum_area {
+  text-align: center;
+  margin-top: 50px;
+  border: 1px black solid;
+  padding: 15px;
+}
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid black 1px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.invisible {
+  display: none;
+}
+
