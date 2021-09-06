@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eShop</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar">
+                <a href="index.html">
+                    <div class="logo"><img src="../Model_Homework/img/Logo.png"></div>
+                </a>
+                <div class="navbar_forms_area">
+                    <div class="catalog_btn_area">
+                        <button class="catalog_btn">Каталог</button>
+                    </div>
+                    <div class="login_btn_area"><button class="login_btn">Войти</button></div>
+                    <form action="#" class="search-form">
+                        <input class="field_input" type="text" v-model="searchLine">
+                        <button class="search-button" type="submit" @click="filterGoods">Искать</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="cart_area">
+                <button class="cart-button" type="button" @click="show = !show">Корзина</button>
+            </div>
+        </header>
+        <main>
+            <div class="cart" v-show="show">
+                <p v-if="!cartItems.length">Корзина пуста</p>
+                <div class="cart-item" v-for="item of cartItems" :key="item.product">
+                    <img :src="imgCart" alt="image">
+                    <p class=" product-title">{{ item.product_name }}</p>
+                    <p class="product-single-price">Цена за ед. товара: {{ item.price }}</p>
+                    <p>Количество:{{ item.quantity}}</p>
+                    <p>Цена:{{ item.quantity*item.price}}</p>
+                    <button class="delete_btn" @click="remove(item)">Удалить</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="goods_card" v-for="product of filteredGoods" :key="product.id_product">
+                    <img :src="imgCatalog" class="good_item_img" alt="image">
+                    <div class="goods-item">
+                        <h3>{{ product.product_name }}</h3>
+                        <p>{{ product.price }}</p>
+                        <button class="goods_card_button" @click="addProduct(product)">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
