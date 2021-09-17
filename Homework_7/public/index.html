@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar">
+                <a href="index.html">
+                    <div class="logo"><img src="img/Logo.png"></div>
+                </a>
+                <div class="navbar_forms_area">
+                    <div class="catalog_btn_area">
+                        <button class="catalog_btn">Каталог</button>
+                    </div>
+                    <div class="login_btn_area"><button class="login_btn">Войти</button></div>
+                    <filter-el></filter-el>
+                </div>
+            </nav>
+            <div class="cart_area">
+
+                <cart ref="cart"></cart>
+            </div>
+        </header>
+        <main>
+            <error ref="error"></error>
+            <products ref="products"></products>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
