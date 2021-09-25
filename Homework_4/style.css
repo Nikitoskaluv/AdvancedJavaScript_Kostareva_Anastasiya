@@ -1,0 +1,44 @@
+div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+input {
+  width: 30%;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+span {
+  color: red;
+}
+
+input {
+  outline: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.trueInput {
+  border: 1px solid green;
+}
+
+.falseInput {
+  border: 1px solid red;
+}
+
+.err {
+  display: none;
+}
